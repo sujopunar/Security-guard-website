@@ -1,0 +1,53 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    {{! /css and most of the terms infront of it, the route has already been defined in app.js under the middleware section}}
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+  </head>
+<div class="container-fluid mt-5 about-style" id="userUpdateid">
+     {{>navbar}}
+{{!user navbar section starts}}
+<div>
+ <ul class="nav">
+     <li class="nav-item">
+     <column>
+     <a class="nav-link border border-secondary" href="UserScreensid"><h1>User Name</h1></a>
+     </li>
+     <li class="nav-item">
+     <a class="nav-link border border-secondary" href="#userUpdateid"><h1>Update Status</h1></a>
+     </li>
+     </column>
+ </ul>
+</div>
+{{!user navbar section ends}}
+
+<div class= "container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-10 col-12 mx-auto">
+      <div class="row">
+        
+
+{{!left side main}}
+{{!Users Main starts}}
+<div class="container">
+  <div class="row float-start">
+    <div class="w-500"></div>
+    <div class="col"><h1>Amount payed</h1>></div>
+    <div class="col"><h1>Column</h1>></div>
+    <div class="w-500"></div>
+    <div class="col"><h1>Date payed</h1>></div>
+    <div class="col"><h1>Column</h1>></div>
+    <div class="w-500"></div>
+    <div class="col"><h1>Amount Due</h1>></div>
+    <div class="col"><h1>Column</h1>></div>
+  </div>
+</div>
+{{!Users Main ends}}
+      </div>
+    </div>
+  </div>
+</div>
+</div>

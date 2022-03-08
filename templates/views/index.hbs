@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    {{! /css and most of the terms infront of it, the route has already been defined in app.js under the middleware section}}
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+
+    {{>navbar}}
+    {{!index section starts}}
+<div class= "container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-10 col-12 mx-auto">
+      <div class="row">
+        <div class="col-md-6 col-12 hero-text order-md-0 order-1 d-flex justify-content-center align-items-start flex-column ">{{! md is medium devices and col alone is mobile devices. the order property means that when it is in medium devices it will be on the left and in mobile devices it will be one step down}}
+          <h1> Welcome To The</h1>
+          <h1> The Security Guard Website</h1>
+          <p>We are a team of <span class="bold-style"> Professional Security guard providers</span>
+          <button class=btn-style btn-primary> Read More</button>
+
+          </p>
+        </div>
+        {{!right side}}
+        <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+          <figure class="security-image">
+            <img src="images/security_image.jpg" alt="securityguard_image">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{!index section ends}}
+
+{{!About Us starts}}
+{{>about}}
+{{!About Us ends}}
+{{!LOGIN SECTION starts}}
+{{>login}}
+{{!LOGIN SECTION ends}}
+{{!Register SECTION starts}}
+{{>register}}
+{{!REGISTER SECTION ends}}
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+  </body>
+</html>
